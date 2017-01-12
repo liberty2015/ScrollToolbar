@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <me.liberty.scrolltoolbar.widget.ObservableScrollView
+        android:id="@+id/scrollView"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:src="@mipmap/jet"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="“薛定谔的猫”是由奥地利物理学家薛定谔于1935年提出的有关猫生死叠加[1]  的著名思想实验，是把微观领域的量子行为扩展到宏观世界的推演。这里必须要认识量子行为的一个现象：观测。微观物质有不同的存在形式，即粒子和波。通常，微观物质以波的叠加混沌态存在；一旦人的意识参与到观测行为中，它们立刻选择成为粒子。实验是这样的：在一个盒子里有一只猫，以及少量放射性物质。之后，有50%的概率放射性物质将会衰变并释放出毒气杀死这只猫，同时有50%的概率放射性物质不会衰变而猫将活下来。
+根据经典物理学，在盒子里必将发生这两个结果之一，而外部观测者只有打开盒子才能知道里面的结果[2]  。在量子的世界里，当盒子处于关闭状态，整个系统则一直保持不确定性的波态，即猫生死叠加。猫到底是死是活必须在盒子打开后，外部观测者观测时，物质以粒子形式表现后才能确定。这项实验旨在论证量子力学对微观粒子世界超乎常理的认识和理解，可这使微观不确定原理变成了宏观不确定原理，客观规律不以人的意志为转移，猫既活又死违背了逻辑思维。
+薛定谔的猫本身是一个假设的概念，随着技术的发展，人们在光子、原子、分子中实现了薛定谔猫态，甚至已经开始尝试用病毒来制备薛定谔猫态，如刘慈欣《球状闪电》中变成量子态的人，人们已经越来越接近实现生命体的薛定谔猫[3]  。可是另外一方面，人们发现薛定谔猫态（量子叠加态）本身就在生命过程中存在着，且是生物生存不可缺少的"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </me.liberty.scrolltoolbar.widget.ObservableScrollView>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        app:theme="@style/AppBarTheme"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+</RelativeLayout>
